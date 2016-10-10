@@ -1,10 +1,17 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
   devise_for :users
+
   namespace :api do
     resources :location_payloads, only: :create
   end
+
+  resources :users, only: :show do
+    resources :locations, only: :index
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
