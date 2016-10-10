@@ -17,7 +17,7 @@ class Api::LocationPayloadsController < ApplicationController
     user.location_payloads.create! lp_params
     render json: true
 
-    # TODO: error handling?
+    # TODO: error handling
   end
 
   private
