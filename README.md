@@ -1,3 +1,5 @@
+### [See blog post here](http://ericlondon.com/2016/10/09/create-an-ios-swift-app-to-send-your-location-to-a-rails-api-and-display-on-google-maps.html).
+
 #### iOS.Swift project
 
 [Swift iOS Location Services](https://github.com/EricLondon/Swift-iOS-Location-Services)
